@@ -12,7 +12,7 @@ The primary action is to download photos from a google account. Other notable fe
 - Script takes `start_year`, `start_month`, `end_year`, `end_month` as input.
 - Photos existing in the date range provided are downloaded.
 - Downloads are granularized on per-month basis.
-- Creates folders based on file creation date( folder structure is `year/month/file_name`)
+- Creates folders based on file creation date( folder structure is `year/month/day/file_name`)
 - The photos metadata (fetched from api) is stored in csv file to prevent unnecessary API calls.
   - csv format - `photo_{year}-{month}.csv`
   - if the csv file is present, fetching metadata from source api is skipped.
